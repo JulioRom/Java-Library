@@ -78,7 +78,7 @@ public class BookService {
 
 	public void updateBook(String id, BookDTO bookDTO) {
 		// Verificar si el libro existe, de lo contrario lanzar excepción
-		Book existingBook = bookRepository.getBook(id); // Lanza BookNotFoundException si no existe
+		//Book existingBook = bookRepository.getBook(id); // Lanza BookNotFoundException si no existe
 
 		// Crear un nuevo objeto Book con los datos actualizados
 		Book updatedBook = new Book(id, bookDTO);

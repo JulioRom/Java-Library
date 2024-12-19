@@ -76,7 +76,7 @@ class BookServiceTest {
 
         // Assert
         verify(bookRepository, times(1)).getBooks(); // Verifica que se llame al repositorio
-        String expected = book1.toString() + "\n" + book2.toString() + "\n";
+        String expected = String.join("\n", book1.toString(), book2.toString());
         assertEquals(expected, allBooks, "La información de todos los libros debería estar concatenada");
     }
 }

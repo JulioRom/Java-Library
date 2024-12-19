@@ -1,8 +1,6 @@
 package com.talentofuturo.biblioteca.model;
 
 import com.talentofuturo.biblioteca.controller.dto.BookDTO;
-
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
 
